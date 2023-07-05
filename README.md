@@ -20,3 +20,13 @@ You're basically working with Entity Framework so you have to add (4) Entity Fra
 Run the below command
 
 > dotnet-aspnet-codegenerator controller -name GoodsInTransitCertController -async -api -m GoodsInTransitCert -dc GoodsInTransitContext -outDir Controllers
+
+
+#### To add dotnet ef to CLI 
+- dotnet tool install --global dotnet-ef
+
+#### To create migration
+- dotnet ef migrations add InitialCreate
+
+#### To run migration
+- dotnet ef database update
